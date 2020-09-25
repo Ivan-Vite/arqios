@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/images/logo.svg';
+import './assets/css/App.css';
+
+import ComponentTypeHouse from './components/ComponentTypeHouse';
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 		<h1>ARQIOS</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reloa.
         </p>
         <a
           className="App-link"
@@ -20,6 +22,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <section className="componentes">
+          <ComponentTypeHouse/>
+        </section>
     </div>
   );
 }
