@@ -7,6 +7,7 @@ import ComponentTypeHouse from './components/ComponentTypeHouse';
 function App() {
   return (
     <div className="App">
+      <Header/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 		<h1>ARQIOS</h1>
@@ -25,6 +26,7 @@ function App() {
       <section className="componentes">
           <ComponentTypeHouse/>
         </section>
+      <Footer/>
     </div>
   );
 }
