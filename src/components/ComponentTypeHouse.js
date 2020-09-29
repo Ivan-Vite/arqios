@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import '../assets/css/typeHouse.css'
+
 
 class ComponentTypeHouse extends Component {
 	constructor(props) {
@@ -30,16 +32,21 @@ class ComponentTypeHouse extends Component {
 			return <div>Loading...</div>;
 		} else {
 			return (
+				<section class='TypeHouse' >
 				<div>
+					<p> Más que un hogar </p>
 					{dataSource.Items.map(item => (
-						<div key={item.idHouse}>
+						<div className="boxes" key={item.idHouse}>
 							<h1>{item.detail.name}</h1>
-              <h1>{item.detail.status}</h1>
-              <h1>{item.detail.img}</h1>
-              <h1>{item.detail.description}</h1>
+							<h1>{item.detail.status}</h1>
+							<img alt={item.detail.name} src={item.detail.img} />
+							<h1>{item.detail.img}</h1>
+							<h1>{item.detail.description}</h1>
+							<h1>{item.detail.streetAddress}</h1>
 						</div>
 					))}
 				</div>
+				</section>
 			);
 		}
 	}
