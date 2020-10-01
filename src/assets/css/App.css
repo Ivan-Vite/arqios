@@ -14,18 +14,58 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  
+  /*display: flex;
   flex-direction: column;
+  background-color: #282c34;
   align-items: center;
-  justify-content: center;
+   justify-content: center; 
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white;*/
+  background: linear-gradient(90deg, rgba(15, 32, 39, 0.5) 0%, rgba(32, 58, 67, 0.5) 50%, rgba(44, 83, 100, 0.5) 100%), url(../../assets/images/test_house.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  background-color: transparent !important;
+  height: 785px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+
 }
+
+.App-header .navbar {
+  background-color: transparent !important;
+}
+
 
 .App-link {
   color: #61dafb;
+}
+
+.MenuHeader{
+  font-size: 13px;
+  color: #F1F3F5;
+}
+
+.TextHeader{
+  font-style: normal;
+  font-weight: normal;
+  line-height: 35px;
+  color: #E0E0E0;
+  height: 785px;
+}
+
+.btn-flat {
+  font-size: 1.5rem;
+  width: 186px;
+  height: 48px;
+  left: 312px;
+  top: 537px;
+
+  /* Orange */
+  color: white;
+  background: #F2994A;
+  border-radius: 2px;
 }
 
 @keyframes App-logo-spin {
