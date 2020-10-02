@@ -57,10 +57,15 @@
 }
 
 #divPadre {
-    height: 100px;
-    width: 800px;
-    text-align: center;
-    background-color: blue;
+    /* Section3/Casas */
+    position: absolute;
+    height: 1130px;
+    left: 0px;
+    right: 0px;
+    top: 1570px;
+
+    /* Secondary */
+    background: #54564E;
 }
 
 #divHijo {
@@ -95,3 +100,93 @@
         width: 25%;
     }
 }
+
+/****/
+/* Section3/Casas */
+.section3 {
+    position: absolute;
+    height: 1130px;
+    left: 0px;
+    right: 0px;
+    top: 1570px;
+    
+    /* Secondary */
+    
+    background: #54564E;
+
+}
+
+.section3 p {
+    position: absolute;
+width: 601px;
+height: 83px;
+left: 432px;
+top: 80px;
+
+font-family: Kumbh Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 72px;
+line-height: 114.9%;
+/* identical to box height, or 83px */
+
+
+/* White */
+
+color: #F1F3F5;
+}
+
+/*.section3 section{
+    position: absolute;
+    width: 397px;
+    height: 646px;
+    left: 79px;
+    top: 354px;
+}*/
+
+.house1Test{
+    position: absolute;
+    width: 397px;
+    height: 646px;
+    left: 79px;
+    top: 354px;
+}
+
+.section3 img{
+    position: absolute;
+    width: 356px;
+    height: 532px;
+    left: 0px;
+    top: 20px;
+}
+
+
+
+/*
+h1
+*/
+
+
+.descriptionP {
+    position: absolute;
+    width: 1021px;
+    height: 58px;
+    left: 222px;
+    top: 221px;
+
+    font-family: Kumbh Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160.1%;
+    /* or 29px */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    /* White */
+
+    color: #F1F3F5;
+}
+
+
