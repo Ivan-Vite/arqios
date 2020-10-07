@@ -24,11 +24,16 @@
 .App-header .navbar {
   background-color: transparent !important;
 }
-.navbar .navbar-brand{
+/* .navbar .navbar-brand{
   left: 80px !important;
   top: 48px !important;
-}
+} */
 
+.navbar-light .navbar-toggler-icon{
+  background-image: url(../../assets/images/Menu_toogle.png)!important;
+  width: 32px!important;
+  height: 12px!important;
+  }
 /* TODO delete */
 .App-link {
   color: #61dafb;
