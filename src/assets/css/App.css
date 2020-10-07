@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background: linear-gradient(90deg, rgba(15, 32, 39, 0.5) 0%, rgba(32, 58, 67, 0.5) 50%, rgba(44, 83, 100, 0.5) 100%), url(../../assets/images/test_house.png) no-repeat center;
+  background: linear-gradient(0deg, rgba(26, 48, 55, 0.2),rgba(26, 48, 55, 0.2)), url(../../assets/images/test_house.png) no-repeat center;
   background-size: cover;
   min-height: 100vh;
   background-color: transparent !important;
