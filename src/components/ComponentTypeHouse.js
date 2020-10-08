@@ -33,16 +33,21 @@ class ComponentTypeHouse extends Component {
 			return (
 				<section className='section3'>
 				<div>
-					<p> Más que un hogar </p>
-					<h1 className='descriptionP'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl egestas elementum pretium turpis mattis mi a vivamus laoreet. Ut suspendisse aliquet vulputate nibh habitant sed tortor. Sit gravida </h1>
+					<h1> Más que un hogar </h1>
+					<h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl egestas elementum pretium turpis mattis mi a vivamus laoreet. Ut suspendisse aliquet vulputate nibh habitant sed tortor. Sit gravida </h2>
 					{dataSource.Items.map(item => (
-						<section key={item.idHouse}>
-							<h1>{item.detail.name}</h1>
-							<h1>{item.detail.status}</h1>
-							<img alt={item.detail.name} src={item.detail.img} />
-							<h1>{item.detail.description}</h1>
+						<div className='divHouse' key={item.idHouse}>
 							<h1>{item.detail.streetAddress}</h1>
-						</section>
+							<h2>{item.detail.status}</h2>
+							<hr className='new1'/>
+							<canvas/>
+							<rect id="rect"/>
+							<h3>{item.detail.name}</h3>
+							<img alt={item.detail.name} src={item.detail.img} />
+							<h3>{item.detail.description}</h3>
+							
+						</div>
+						
 					))}
 				</div>
 				</section>

@@ -1,5 +1,6 @@
 import React from "react";
 import '../assets/css/style.css'
+import logo from '../assets/images/arqios-logo.svg';
 
 function Footer() {
   return (
@@ -29,7 +30,7 @@ function Footer() {
             <p class="cont">Av. Paseo de la Reforma 296, Juárez, Cuauhtémoc,<br/>06600 Ciudad de México, CDMX</p>
                 <p class="tel">+(52) 55 4470 8580</p>
                 <div class="mailto">
-                    <a class="hola" href="mailto:hola@glints.com.mx?Subject=Hola%Glints!" target="_blank">hola@glints.com.mx</a>
+                    <a class="hola" href="mailto:hola@glints.com.mx?Subject=Hola%Glints!" target="_blank">miguel@arqios.com</a>
                 </div>
             </div>
         </div>
@@ -43,9 +44,10 @@ function Footer() {
                 <path d="M265 4.25C253.542 4.25 244.167 13.6042 244.167 25.125C244.167 35.5417 251.792 44.1875 261.75 45.75V31.1667H256.458V25.125H261.75V20.5208C261.75 15.2917 264.854 12.4167 269.625 12.4167C271.896 12.4167 274.271 12.8125 274.271 12.8125V17.9583H271.646C269.062 17.9583 268.25 19.5625 268.25 21.2083V25.125H274.042L273.104 31.1667H268.25V45.75C273.159 44.9747 277.63 42.4698 280.854 38.6876C284.078 34.9054 285.844 30.0951 285.833 25.125C285.833 13.6042 276.458 4.25 265 4.25Z" fill="white"/>
             </svg>
         </div>
-
-        
-
+        <div class="derechos-reservados">
+            <p class="dr">Derechos Reservados || ARQIOSYSTEMS SAPI de CV</p>
+        <a><img src={logo}  alt="logo" /></a>
+        </div>
     </footer>
   );
 }
