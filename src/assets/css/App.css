@@ -1,7 +1,7 @@
-.App {
+/* .App {
   text-align: center;
 }
-
+ */
 .App-logo {
   width: 192px;
   height: 64px;
@@ -24,16 +24,13 @@
 .App-header .navbar {
   background-color: transparent !important;
 }
-/* .navbar .navbar-brand{
-  left: 80px !important;
-  top: 48px !important;
-} */
 
 .navbar-light .navbar-toggler-icon{
   background-image: url(../../assets/images/Menu_toogle.png)!important;
   width: 32px!important;
   height: 12px!important;
   }
+
 /* TODO delete */
 .App-link {
   color: #61dafb;
@@ -50,5 +47,44 @@
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
+  color: #FCFDFD;
+}
+
+.interactive-sect{
+  background: linear-gradient(0deg, rgba(26, 48, 55, 0.2),rgba(26, 48, 55, 0.2)), url(../../assets/images/test_house.png) no-repeat center;
+  background: linear-gradient(291deg, rgba(15,32,39,1) -0.36%,rgba(32,58,67,1) 49.82%,rgba(44,83,100,1) 100%);
+  background-size: cover;
+  background-color: transparent !important;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+
+.TextInteractiveOne{
+  /* width: 550px;
+  height: 56px;
+  left: 80px;
+  top: 196px;
+  Headline/H1 */
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 100%;
+  color: #FCFDFD;
+}
+.TextInteractiveTwo{
+ /* width: 429px;
+  height: 35px;
+  left: 80px;
+  top: 314px;
+   Headline/H4 */
+  
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
   color: #FCFDFD;
 }

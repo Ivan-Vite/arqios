@@ -6,35 +6,38 @@ import cil_garage from '../assets/images/interactive_house/cil_garage.png';
 import cil_tv from '../assets/images/interactive_house/cil_tv.png';
 import house_int1 from '../assets/images/interactive_house/exer-romero-render-night-final 1.png';
 
-class InteractiveHouse extends Component{
+class InteractiveHouse extends Component {
   render() {
-    return (    
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="row">
-            <div class="col-md-12">
-                Disfruta la casa inteligente de tus sueños
-              </div>
-              <div class="col-md-12">
-              <img src={cil_couch} />
-              </div>
-              <div class="col-md-12">
-              <img src={cil_bed} />
-              </div>
-              <div class="col-md-12">
-              <img src={cil_door} />
-              </div>
-              <div class="col-md-12">
-              <img src={cil_tv} />
-              </div>
-              <div class="col-md-12">
-              <img src={cil_garage} />
+    return (
+      <div className="interactive-sect">
+        <div className="container">
+          <div className="col-md-12"><p className="TextInteractiveOne">Bienvenido a casa</p></div>
+          <div className="row">
+            <div className="col-md-5">
+              <div className="row">
+                <div className="col-md-12">
+                 <p className="TextInteractiveTwo">Disfruta la casa inteligente de tus sueños</p> 
+                </div>
+                <div className="col-md-12">
+                  <img src={cil_couch} alt="couch" />
+                </div>
+                <div className="col-md-12">
+                  <img src={cil_bed} alt="bed" />
+                </div>
+                <div className="col-md-12">
+                  <img src={cil_door} alt="door" />
+                </div>
+                <div className="col-md-12">
+                  <img src={cil_tv} alt="tv" />
+                </div>
+                <div className="col-md-12">
+                  <img src={cil_garage} alt="garage" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-7">
-          <img src={house_int1} />
+            <div className="col-md-7">
+              <img src={house_int1} alt="houseInt" />
+            </div>
           </div>
         </div>
       </div>
