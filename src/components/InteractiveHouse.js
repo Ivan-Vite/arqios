@@ -4,28 +4,34 @@ import cil_couch from '../assets/images/interactive_house/cil_couch.png';
 import cil_door from '../assets/images/interactive_house/cil_door.png';
 import cil_garage from '../assets/images/interactive_house/cil_garage.png';
 import cil_tv from '../assets/images/interactive_house/cil_tv.png';
-//import night from '../assets/images/interactive_house/night.png';
-//import ligth from '../assets/images/interactive_house/ligth.png';
 
 const night = require('../assets/images/interactive_house/night.png');
 const ligth = require('../assets/images/interactive_house/ligth.png');
 
+
 class InteractiveHouse extends Component {
   
-  state = {
-    night_active: true
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      night_active: true,
+      bgColor: true
+    }
   }
-  toggleImage = () => {
-    this.setState(state => ({ night_active: !state.night_active }))
+
+  changeViewHouse = () => {
+    this.setState(state => ({ night_active: !state.night_active, bgColor: !state.bgColor}))
   }
   getImageName = () => this.state.night_active ? night : ligth
+  getColorBack = () => this.state.bgColor ? 'interactive-sect-night d-flex align-items-center' : 'interactive-sect-ligth d-flex align-items-center'
   render() {
     const imageName = this.getImageName();
     return (
-      <div className="interactive-sect d-flex align-items-center">
-        <div className="container">
-          <div className="row w-100"><p className="TextInteractiveOne">Bienvenido a casa</p></div>
-          <div className="row ">
+      <div className={this.getColorBack()}>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12"><p className="TextInteractiveOne">Bienvenido a casa</p></div>
             <div className="col-md-5">
               <div className="row">
                 <div className="col-md-12">
@@ -59,12 +65,17 @@ class InteractiveHouse extends Component {
               </div>
             </div>
             <div className="col-md-7">
-              <img src={imageName} alt="houseInt" />
+              <img src={imageName} alt="houseInt" className="img-fluid"/>
+            </div>
+            <div className="col-md-12">
+              <p><button type="button" className="btn btn-lg btn-info rounded-pill" onClick={this.changeViewHouse}>Info</button></p>
+              <button type="button" className="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" > <div className="handle"></div></button>
+            </div>
+            <div className="col-md-12">
+              <p className="slideDow">desliza hacia abajo</p>
             </div>
           </div>
-          <div className="row">
-            <button type="button" class="btn btn-lg btn-info" onClick={this.toggleImage}>Info</button>
-          </div>
+          
         </div>
       </div>
     );
