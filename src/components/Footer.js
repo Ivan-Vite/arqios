@@ -46,7 +46,7 @@ function Footer() {
         </div>
         <div class="derechos-reservados">
             <p class="dr">Derechos Reservados || ARQIOSYSTEMS SAPI de CV</p>
-        <a><img src={logo}  alt="logo" /></a>
+            <a><img className="logoFooter" src={logo}  alt="logo" /></a>
         </div>
     </footer>
   );
