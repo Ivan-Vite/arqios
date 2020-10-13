@@ -4,6 +4,7 @@ import ComponentTypeHouse from './components/ComponentTypeHouse';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import InteractiveHouse from './components/InteractiveHouse';
+import Cards from './components/Cards'; 
 
 function App() {
   return (
