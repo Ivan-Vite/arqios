@@ -69,11 +69,15 @@ class InteractiveHouse extends Component {
             </div>
             <div className="col-md-12">
               <p><button type="button" className="btn btn-lg btn-info rounded-pill" onClick={this.changeViewHouse}>Info</button></p>
-              <button type="button" className="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" > <div className="handle"></div></button>
+              {/* <div className="custom-control custom-switch">
+                <input type="checkbox" className="custom-control-input" id="customSwitch1"/>
+                <label className="custom-control-label" for="customSwitch1"></label>
+              </div> */}
             </div>
             <div className="col-md-12">
               <p className="slideDow">desliza hacia abajo</p>
             </div>
+
           </div>
           
         </div>
