@@ -2,11 +2,9 @@
     left: 0px;
     right: 0px;
     top: 1570px;
-
-    /* Secondary */
-
-    background: #54564E;
-
+    background: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .section3 h1 {
@@ -20,7 +18,7 @@
     font-weight: bold;
     /*font-size: 72px;*/
     line-height: 114.9%;
-    color: #F1F3F5;
+    color: #000000;
 }
 
 .section3 h2 {
@@ -50,3 +48,11 @@
     color: #333 !important;
     transform: rotate(90deg) !important;
 }
+
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 50px !important;
+    margin-left: 50px !important;
+}
+
