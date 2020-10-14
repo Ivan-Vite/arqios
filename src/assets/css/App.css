@@ -1,11 +1,60 @@
-
 .App-logo {
   width: 192px;
   height: 64px;
   left: 80px;
   top: 48px;
 }
+.App-header {
+  position: relative;
+  display: block;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
 
+.App-header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.App-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.App-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .App-header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
+  }
+  .App-header video {
+    display: none;
+  }
+}
+/*
 .App-header {
   background: linear-gradient(0deg, rgba(26, 48, 55, 0.2),rgba(26, 48, 55, 0.2)), url(../../assets/images/test_house.png) no-repeat center;
   background-size: cover;
@@ -15,18 +64,17 @@
   left: 0px;
   top: 0px;
   border-radius: 0px;
-
 }
-
+*/
 .App-header .navbar {
   background-color: transparent !important;
 }
 
-.navbar-light .navbar-toggler-icon{
-  background-image: url(../../assets/images/Menu_toogle.png)!important;
-  width: 32px!important;
-  height: 12px!important;
-  }
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../../assets/images/Menu_toogle.png) !important;
+  width: 32px !important;
+  height: 12px !important;
+}
 
 /* TODO delete */
 .App-link {
@@ -38,17 +86,22 @@
   color: #F1F3F5;
 } */
 
-.TextHeader{
+.TextHeader {
   height: 807px;
   font-family: Spartan;
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
-  color: #FCFDFD;
+  color: #fcfdfd;
 }
 
-.interactive-sect-night{
-  background: linear-gradient(291deg, rgba(15,32,39,1) -0.36%,rgba(32,58,67,1) 49.82%,rgba(44,83,100,1) 100%);
+.interactive-sect-night {
+  background: linear-gradient(
+    291deg,
+    rgba(15, 32, 39, 1) -0.36%,
+    rgba(32, 58, 67, 1) 49.82%,
+    rgba(44, 83, 100, 1) 100%
+  );
   background-size: cover;
   background-color: transparent !important;
   height: 900px;
@@ -57,8 +110,13 @@
   border-radius: 0px;
 }
 
-.interactive-sect-ligth{
-  background: linear-gradient(291.34deg, rgba(83,152,183,1) 0%, rgba(133,180,198,1) 50%, rgba(155,189,208,1) 100%);
+.interactive-sect-ligth {
+  background: linear-gradient(
+    291.34deg,
+    rgba(83, 152, 183, 1) 0%,
+    rgba(133, 180, 198, 1) 50%,
+    rgba(155, 189, 208, 1) 100%
+  );
   background-size: cover;
   background-color: transparent !important;
   height: 900px;
@@ -67,44 +125,44 @@
   border-radius: 0px;
 }
 
-.TextInteractiveOne{
+.TextInteractiveOne {
   font-family: Spartan;
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
   line-height: 100%;
-  color: #FCFDFD;
+  color: #fcfdfd;
 }
 
-.TextInteractiveTwo{
+.TextInteractiveTwo {
   font-family: Jost;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 35px;
-  color: #FCFDFD;
+  color: #fcfdfd;
 }
 
-.IconImageIntereactive{
+.IconImageIntereactive {
   width: 24px;
   height: 24px;
 }
 
-.SpacingIconInteractive{
+.SpacingIconInteractive {
   height: 41px;
 }
 
-.container-fluid{
+.container-fluid {
   margin-right: 5% !important;
   margin-left: 5% !important;
 }
 
-.slideDow{
+.slideDow {
   font-family: Jost;
   font-style: italic;
   font-weight: normal;
   font-size: 12px;
   line-height: 17px;
   letter-spacing: 0.15px;
-  color: #FCFDFD;
+  color: #fcfdfd;
 }
