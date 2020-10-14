@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-import { Navbar, Nav } from "react-bootstrap";
+
+import logo from '../assets/images/Standard.svg';
 
 class NavbarComponent extends Component{
   render() {
     return (    
-      <Navbar>
-        <Navbar.Brand  href="#home"><div className="MenuHeader">arqios</div></Navbar.Brand>
-        <Navbar.Collapse className="justify-content-end">
-          <Nav>
-            <Nav.Link href="#inicio" ><div className="MenuHeader">INICIO</div></Nav.Link>
-            <Nav.Link href="#propiedades"><div className="MenuHeader">PROPIEDADES</div></Nav.Link>
-            <Nav.Link href="#nosotros"><div className="MenuHeader">NOSOTROS</div></Nav.Link>
-            <Nav.Link href="#contacto"><div className="MenuHeader">CONTACTO</div></Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-    </Navbar>
+    <nav className="navbar fixed-top navbar-light bg-light">
+      <a className="navbar-brand mb-1 App-logo" ><img src={logo}  alt="logo" /></a>
+      {/* <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <a className="nav-item nav-link MenuHeader" >INICIO</a>
+          <a className="nav-item nav-link MenuHeader" >PROPIEDADES</a>
+          <a className="nav-item nav-link MenuHeader" >NOSOTROS</a>
+          <a className="nav-item nav-link MenuHeader" >CONTACTO</a>
+        </div>
+      </div> */}
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="MenuArqio">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      
+    </nav>
     );
   }
 }

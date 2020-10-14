@@ -1,22 +1,28 @@
 import React from "react";
-import NavbarComponent from '../components/NavbarComponent';
-// import logo from '../assets/images/logo.svg';
-import { Button, Jumbotron, Container } from "react-bootstrap";
+import NavbarComponent from "../components/NavbarComponent";
+import video_bg from "../assets/images/Hero arqios.mp4";
+import { video } from "react-bootstrap";
 
 function Header() {
-  return (    
-    <header className="App-header" >
-      <NavbarComponent/>
-      <div class="TextHeader d-flex justify-content-start align-items-center">
-        <div class="col-md-2"></div>
-        <div class="col-md-4 text-left">
-          <h1>Tu futura casa es inteligente</h1>
-          <br/>
-          <br/>
-          <h5>Llegamos a innovar los bienes raíces en México para hacer tu experiencia de compra increíble como tu futura casa</h5>
-          <button type="button" class="btn btn-lg" className="btn-flat">Conocer más</button>
+  return (
+    <header className="App-header">
+      <NavbarComponent />
+      <div className="overlay"></div>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src={video_bg} type="video/mp4"></source>
+      </video>
+
+      <div className="container h-100">
+        <div className="d-flex h-100 text-center align-items-center">
+          <div className="w-100 text-white">
+            <h1>Tu futura casa es inteligente</h1>
+          </div>
         </div>
-        <div class="col-md-6"></div>
       </div>
     </header>
   );

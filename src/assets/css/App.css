@@ -1,78 +1,168 @@
-.App {
-  /*text-align: center;*/
-}
-
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 192px;
+  height: 64px;
+  left: 80px;
+  top: 48px;
+}
+.App-header {
+  position: relative;
+  display: block;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App-header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.App-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.App-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .App-header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
+  }
+  .App-header video {
+    display: none;
   }
 }
-
+/*
 .App-header {
-  
-  /*display: flex;
-  flex-direction: column;
-  background-color: #282c34;
-  align-items: center;
-   justify-content: center; 
-  font-size: calc(10px + 2vmin);
-  color: white;*/
-  background: linear-gradient(90deg, rgba(15, 32, 39, 0.5) 0%, rgba(32, 58, 67, 0.5) 50%, rgba(44, 83, 100, 0.5) 100%), url(../../assets/images/test_house.jpg) no-repeat center;
+  background: linear-gradient(0deg, rgba(26, 48, 55, 0.2),rgba(26, 48, 55, 0.2)), url(../../assets/images/test_house.png) no-repeat center;
   background-size: cover;
   min-height: 100vh;
   background-color: transparent !important;
-  height: 785px;
+  height: 807px;
   left: 0px;
   top: 0px;
   border-radius: 0px;
-
 }
-
+*/
 .App-header .navbar {
   background-color: transparent !important;
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../../assets/images/Menu_toogle.png) !important;
+  width: 32px !important;
+  height: 12px !important;
+}
 
+/* TODO delete */
 .App-link {
   color: #61dafb;
 }
 
-.MenuHeader{
+/* .MenuHeader{
   font-size: 13px;
   color: #F1F3F5;
-}
+} */
 
-.TextHeader{
+.TextHeader {
+  height: 807px;
+  font-family: Spartan;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 56px;
+  color: #fcfdfd;
+}
+
+.interactive-sect-night {
+  background: linear-gradient(
+    291deg,
+    rgba(15, 32, 39, 1) -0.36%,
+    rgba(32, 58, 67, 1) 49.82%,
+    rgba(44, 83, 100, 1) 100%
+  );
+  background-size: cover;
+  background-color: transparent !important;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+
+.interactive-sect-ligth {
+  background: linear-gradient(
+    291.34deg,
+    rgba(83, 152, 183, 1) 0%,
+    rgba(133, 180, 198, 1) 50%,
+    rgba(155, 189, 208, 1) 100%
+  );
+  background-size: cover;
+  background-color: transparent !important;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+
+.TextInteractiveOne {
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 100%;
+  color: #fcfdfd;
+}
+
+.TextInteractiveTwo {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 35px;
-  color: #E0E0E0;
-  height: 785px;
+  color: #fcfdfd;
 }
 
-.btn-flat {
-  font-size: 1.5rem;
-  width: 186px;
-  height: 48px;
-  left: 312px;
-  top: 537px;
-
-  /* Orange */
-  color: white;
-  background: #F2994A;
-  border-radius: 2px;
+.IconImageIntereactive {
+  width: 24px;
+  height: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SpacingIconInteractive {
+  height: 41px;
+}
+
+.container-fluid {
+  margin-right: 5% !important;
+  margin-left: 5% !important;
+}
+
+.slideDow {
+  font-family: Jost;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.15px;
+  color: #fcfdfd;
 }
