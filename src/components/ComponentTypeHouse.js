@@ -38,7 +38,6 @@ class ComponentTypeHouse extends Component {
 					<div class="row">
 						<div class="col-md-6 offset-md-3">
 							<h1> Más que un hogar </h1>
-							<h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl egestas elementum pretium turpis mattis mi a vivamus laoreet. Ut suspendisse aliquet vulputate nibh habitant sed tortor. Sit gravida </h2>
 						</div>
 					</div>
 				<CardDeck>
