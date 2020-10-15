@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarComponent from "../components/NavbarComponent";
-import video_bg from "../assets/images/Hero arqios.mp4";
+import video_bg from "../assets/images/Hero-arqios.mp4";
 import { video } from "react-bootstrap";
 
 function Header() {
