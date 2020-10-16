@@ -8,7 +8,7 @@ function Footer() {
 
         <div class="menu-footer">
             <div class="col-footer">
-                <h3>Acerca de nosotros</h3>
+                <h4>Acerca de nosotros</h4>
                 <ul class="nosotros-links">
                     <li class="f-links"><a href="#">Quiénes somos</a></li>
     
@@ -18,7 +18,7 @@ function Footer() {
                 </ul>
             </div>
             <div class="col-footer">
-                <h3>Más información</h3>
+                <h4>Más información</h4>
                 <ul class="nosotros-links">
                     <li class="f-links"><a href="#">Preguntas Frecuentes</a></li>
     
@@ -26,7 +26,7 @@ function Footer() {
                 </ul>
             </div>
             <div class="col-footer">
-                <h3>Contacto</h3>
+                <h4>Contacto</h4>
             <p class="cont">Av. Paseo de la Reforma 296, Juárez, Cuauhtémoc,<br/>06600 Ciudad de México, CDMX</p>
                 <p class="tel">+(52) 55 4470 8580</p>
                 <div class="mailto">

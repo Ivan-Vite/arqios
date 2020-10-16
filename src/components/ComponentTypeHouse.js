@@ -36,8 +36,8 @@ class ComponentTypeHouse extends Component {
 			return <div>Loading...</div>;
 		} else {
 			return (			
-				<div class="row">
-					<BiStreetView/>
+				<div class="row overflow-hidden d-flex justify-content-center">
+
 					<div class="col-md-12 offset-md-3 card__collection clear-fix">
 						{dataSource.Items.map(item => (
 								<div class="cards cards--three">
