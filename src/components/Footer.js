@@ -30,7 +30,7 @@ function Footer() {
             <p class="cont">Av. Paseo de la Reforma 296, Juárez, Cuauhtémoc,<br/>06600 Ciudad de México, CDMX</p>
                 <p class="tel">+(52) 55 4470 8580</p>
                 <div class="mailto">
-                    <a class="hola" href="mailto:hola@glints.com.mx?Subject=Hola%Glints!" target="_blank">miguel@arqios.com</a>
+                    <a class="hola" href="mailto:hola@glints.com.mx?Subject=Hola%Glints!" target="_blank">hola@arqios.com</a>
                 </div>
             </div>
         </div>

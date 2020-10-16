@@ -55,3 +55,45 @@
     margin-right: 50px !important;
     margin-left: 50px !important;
 }
+
+.card {
+    border: 0px solid rgba(0,0,0,.125) !important;
+}
+
+.card hr.new1 {
+    position: absolute;
+    width: 335px;
+    height: 0px;
+    left: 377px;
+    top: 23px;
+
+    border: 2px solid #CDCDCD;
+    transform: rotate(90deg);
+  }
+
+.card-title {
+    margin-bottom: .75rem;
+    padding-top: 50px !important;
+    padding-bottom: 0px !important;
+}
+
+.card h3{
+    position: absolute;
+    width: 150px;
+    height: 0px;
+    left: 321px;
+    top: 422px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0px;
+    text-align: center;
+    color: #1A3037;
+    transform: rotate(90deg);
+}
+
+.card-title h3{
+    margin-bottom: .75rem;
+    transform: rotate(90deg);
+}
