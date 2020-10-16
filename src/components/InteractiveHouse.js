@@ -4,7 +4,7 @@ import cil_couch from '../assets/images/interactive_house/cil_couch.png';
 import cil_door from '../assets/images/interactive_house/cil_door.png';
 import cil_garage from '../assets/images/interactive_house/cil_garage.png';
 import cil_tv from '../assets/images/interactive_house/cil_tv.png';
-
+import cil_audio from '../assets/images/interactive_house/cil_audio.svg';
 const night = require('../assets/images/interactive_house/night.png');
 const ligth = require('../assets/images/interactive_house/ligth.png');
 
@@ -39,27 +39,27 @@ class InteractiveHouse extends Component {
                 </div>
                 <div className="col-md-12">
                   <p className="SpacingIconInteractive">
-                    <img className="IconImageIntereactive" src={cil_couch} alt="couch" />
+                    <img className="IconImageIntereactive" src={cil_audio} alt="audio" /> Smart Devices en tu casa integrados
                   </p>
                 </div>
                 <div className="col-md-12">
                   <p className="SpacingIconInteractive">
-                    <img className="IconImageIntereactive" src={cil_bed} alt="bed" />
+                    <img className="IconImageIntereactive" src={cil_bed} alt="bed" /> Habitaciones totalmente acondicionadas
                   </p>
                 </div>
                 <div className="col-md-12">
                   <p className="SpacingIconInteractive">
-                    <img className="IconImageIntereactive" src={cil_door} alt="door" />
+                    <img className="IconImageIntereactive" src={cil_door} alt="door" /> Cerraduras inteligentes en los accesos de la casa
                   </p>
                 </div>
                 <div className="col-md-12">
                   <p className="SpacingIconInteractive">
-                    <img className="IconImageIntereactive" src={cil_tv} alt="tv" />
+                    <img className="IconImageIntereactive" src={cil_tv} alt="tv" /> Dispositivos inteligentes completamente personalizables
                   </p>
                 </div>
                 <div className="col-md-12">
                   <p className="SpacingIconInteractive">
-                    <img className="IconImageIntereactive" src={cil_garage} alt="garage" />
+                    <img className="IconImageIntereactive" src={cil_garage} alt="garage" /> Espacios de estacionamiento
                   </p>
                 </div>
               </div>

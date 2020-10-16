@@ -3,6 +3,7 @@
   height: 64px;
   left: 80px;
   top: 48px;
+  margin-left: 80px;
 }
 .App-header {
   position: relative;
@@ -27,6 +28,7 @@
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  background-attachment: fixed;
 }
 
 .App-header .container {
@@ -47,8 +49,16 @@
 
 @media (pointer: coarse) and (hover: none) {
   .App-header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
-      no-repeat center center scroll;
+    /*background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;*/
+    position: relative;
+    display: block;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    background-attachment: scroll, fixed;
   }
   .App-header video {
     display: none;
@@ -74,6 +84,7 @@
   background-image: url(../../assets/images/Menu_toogle.png) !important;
   width: 32px !important;
   height: 12px !important;
+  margin-right: 80px;
 }
 
 /* TODO delete */
